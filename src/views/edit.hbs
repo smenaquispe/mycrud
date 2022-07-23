@@ -1,0 +1,8 @@
+<h1>Editing</h1>
+
+<form action="/tasks/edit/{{task._id}}" method="post">
+    <input type="text" name="name" placeholder="name" value="{{task.name}}">
+    <textarea name="description" cols="30" rows="10">{{task.description}}</textarea>
+    <input type="date" name="date" value="{{task.date}}">
+    <button type="submit">Enviar</button>
+</form>

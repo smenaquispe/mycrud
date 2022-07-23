@@ -9,6 +9,7 @@ import { config } from "dotenv";
 // importing routes
 import indexRoutes from "./routes/index.routes.js"
 import taskRoutes from "./routes/task.routes.js";
+import { application } from "express";
 
 config();
 
@@ -17,6 +18,7 @@ const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(morgan('dev'))
+app.use(express.json())
 // set the directory of views
 
 // get the direction of the directory views
@@ -36,9 +38,11 @@ app.engine(
     )
 )
 
+app.use(express.urlencoded({extended:false})) // 
+
 // routes
+app.use(taskRoutes);
 app.use(indexRoutes);
-app.use("/tasks",taskRoutes);
 
 
 // conect to mongodb database

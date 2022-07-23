@@ -1,0 +1,26 @@
+<!--Lista de tasks-->
+<table>
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+
+    {{#each list}}
+        <tr id="{{this._id}}"> 
+            <td>{{@index}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.date}}</td>
+            <td>
+                <a href="/tasks/delete/{{this._id}}">Delete</a>
+                <a href="/tasks/edit/{{this._id}}">Edit</a>
+            </td>
+        </tr>
+    {{/each}}
+</table>
+
