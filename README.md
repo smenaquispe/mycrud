@@ -1,0 +1,17 @@
+# mycrud
+
+It's my first crud that I made with this techs:
+
+- Nodejs
+- HandleBars
+- Mongodb
+
+I stop the development here, because I would try to make better this crud in other repository, with other kind of techs.
+
+You can initialize the crud, just follow this steps:
+
+- Clone the repository with `git clone https://github.com/smenaquispe/mycrud.git` or `git clone git@github.com:smenaquispe/mycrud.git`
+- Go to the directory `/mycrud` and install dependecies with `npm install`
+- In the directory create `.env` file to set enviroment vars, on that file, write something same that: [a link]()
+- Finally launch the website with `npm run start`
+
