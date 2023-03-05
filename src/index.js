@@ -44,6 +44,9 @@ app.use(express.urlencoded({extended:false})) //
 app.use(taskRoutes);
 app.use(indexRoutes);
 
+// adding public directory
+app.use(express.static(path.join(__dirname,'public')))
+
 
 // conect to mongodb database
 mongoose.connect(process.env.MONGODB_URI)
