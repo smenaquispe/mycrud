@@ -1,5 +1,8 @@
 # mycrud
 
+## What do I learn?
+I learnt to create a backend with node js and mongo as db
+
 It's my first crud that I made with this techs:
 
 - Nodejs
